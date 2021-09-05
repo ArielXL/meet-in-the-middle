@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
+<head>
+	<!-- main header -->
+	<meta charset="utf-8">
+	
+				<title>SPOJ.com - Problem ABCDEF</title>
+		  
+	<meta name="keywords" content="language, algorithm, spoj, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  		<meta property="og:title" content="SPOJ.com - Problem ABCDEF"/>
+    <meta property="fb:app_id"      content="321676846207" />
+	<meta property="og:type" content="spoj-pl:problem"/>
+	<meta property="og:url" content="http://www.spoj.com/problems/ABCDEF/"/>
+	<meta property="og:image" content="//stx1.spoj.com/gfx/logo-cr.png"/>
+	<meta property="og:description" content="..."/>
+	<meta name="description" content="..."/>
+		<meta property="og:site_name" content="spoj.com"/>
+
+  <!--[if (gte IE 9)|!(IE)]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" id="metatag">
+  <![endif]--> 
+
+	  <!-- Favicon -->
+	  <link href="//stx1.spoj.com/gfx/favicon_new.png" rel="shortcut icon" type="image/x-icon" />
+	  
+	  <!-- RSS -->
+	  <link href="/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed">
+	
+	  <!-- Web Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">  
+
+	<!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+	
+	
+	
+	<!-- CSS: Bootstrap, Font-awesome, Bootstrap libs,  -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link href="//stx1.spoj.com/gfx/bootstrap-tour/build/css/bootstrap-tour.min.css" rel="stylesheet" />
+  	<link href="//stx1.spoj.com/themes/bootstrap-social.css" rel="stylesheet" type="text/css" />
+  	
+	<link href="//stx1.spoj.com/themes/common.css?7" rel="stylesheet" type="text/css" id="theme0" />
+	<link href="//stx1.spoj.com/themes/en_new.css?7" rel="stylesheet" type="text/css" id="theme" />
+	
+	<!-- JS -->
+	<script type="text/javascript" src='//code.jquery.com/jquery-1.11.1.min.js'></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+	
+		
+		
+	<script type="text/javascript" language="javascript">
+	$(function () { 
+		$("#profile-menu").popover();
+	});
+	function UnCryptMailto(s) {
+		var n=0;
+		var r="";
+		for(var i=0;i<s.length;i++) {		
+			n=s.charCodeAt(i); 
+			if (n>=8364) {n = 128;}
+			r += String.fromCharCode(n+(2));	
+		}
+		return r;
+	}
+	function linkTo_UnCryptMailto(s)	{
+		location.href=UnCryptMailto(s);
+	}
+	</script>
+	
+	<script type="text/javascript">
+	function recordOutboundLink(link, category, action) {
+	  try {
+	    var pageTracker=_gat._getTracker("UA-XXXXX-X");
+	    pageTracker._trackEvent(category, action);
+	    setTimeout('document.location = "' + link.href + '"', 100)
+	  }catch(err){}
+	}
+	</script>
+
+	<script type="text/javascript">
+	(function(){
+		var bsa_optimize=document.createElement('script');
+		bsa_optimize.type='text/javascript';
+		bsa_optimize.async=true;
+		bsa_optimize.src='https://cdn4.buysellads.net/pub/spoj.js?'+(new Date()-new Date()%600000);
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
+	})();
+	</script>
+
+	
+</head>
+
+<body>
+
+	
+	<!-- <div class="space30"></div> -->
+	
+	<!-- Content -->
+	<div class="content">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					
+										
+					
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-md-4">
+					<a href="/" class="navbar-brand">
+						<img src="//stx1.spoj.com/gfx/2015e.png" style="height: 40px;"/>
+					</a>
+					<div class="navbar-header">
+				      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <i class="fa fa-bars"></i>
+				      </button>
+				    </div>
+				</div>
+				<div class="col-md-8" id="menu">
+				
+					
+					<div class="row">
+					<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation"  style="border: 0px;">
+				      <ul class="nav navbar-nav" style="  float: right; margin-top: 10px;">
+				      						        <li class="active">
+					          <a href="/problems"><i class="fa fa-puzzle-piece"></i> PROBLEMS</a>
+					        </li>
+					        					        <li >
+					          <a href="/status"><i class="fa fa-circle"></i> STATUS</a>
+					        </li>
+					        <li >
+					          <a href="/ranks"><i class="fa fa-trophy"></i> RANKS</a>
+					        </li>
+					        <li >
+					          <a href="http://spoj.com/forum"><i class="fa fa-comments-o"></i> DISCUSS</a>
+					        </li>
+					        <li >
+					          <a href="/contests">CONTESTS</a>
+					        </li>
+											        					        
+						        						      	
+						      							      	<li style="margin-right: 0px;">
+						      		<a href="/manageaccount/">
+						      			<span tabindex="0" id="profile-menu" data-trigger="hover" data-container="body" data-toggle="popover" data-html="true" data-placement="left" data-content="You filled 38% of your profile, maybe you want to add some more?"><i class="fa fa-exclamation-triangle text-danger"></i></span>
+						      		</a>
+						      	</li>
+						      						        
+					        <li class="dropdown profile">
+					        	<a href="#" class="username_dropdown dropdown-toggle" data-toggle="dropdown">
+					        		<img width="20" height="20" src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e&s=20?20210810" class="avatar small-left-margin"/>
+					        		<!-- ariel_pd -->PROFILE&nbsp;<span class="caret"></span>
+					        	</a>	
+			
+									<ul class="dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownUser">
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="/myaccount"><span class="fa fa-user fa-fw"></span>&nbsp; My profile</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="/manageaccount"><span class="fa fa-cogs fa-fw"></span>&nbsp; Manage profile</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="/status/ariel_pd"><span class="fa fa-history fa-fw"></span>&nbsp; Submissions history</a></li>
+										<li class="divider"></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="/logout"><span class="fa fa-sign-out fa-fw"></span>&nbsp; Sign out</a></li>
+									</ul>
+								
+					        </li>
+					        
+					        						
+				        
+				      </ul>
+				    </nav>
+				    </div>
+				    
+				    
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="container" id="menu">
+			
+		</div>
+		
+		<div class="container" id="content">
+		<script type='text/javascript' src='/gfx/jquery.cxhelp2.js'></script>
+
+
+
+ <!-- wykorzystywane w pcontent.html (by wiele) -->
+
+<div class="submenu">
+	
+		<ol class="breadcrumb">
+	  <li><a href="/problems">Problems</a></li>
+	  <li><a href="/problems/classical">classical</a></li>
+	  <li class="active">ABCDEF</li>
+	</ol>
+		
+	<ol class="navbar-right">
+						
+		<li><a href="/status/ABCDEF,ariel_pd/" class="">My status</a></li>		<li><a href="/status/ABCDEF/" class="">Status</li></a>
+		<li><a href="/ranks/ABCDEF/" class="">Ranking</li></a>
+	</ol>
+</div>
+
+
+	<script type="text/javascript">
+		var number_of_voteboxes = "3";
+	</script>
+
+
+<div class="row first-row">
+	<div class="col-lg-8 col-md-8">
+		<div class="prob" style="position: relative">
+
+			<!-- google_ad_section_start -->
+			<!-- plik z pomoca kontekstowa (cxhelp_*) dziedziczony po pindex.html -->
+
+
+
+<script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciimath/js/ASCIIMathMLwFallback.js"></script>
+<!--script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciisvg/js/ASCIIsvgPI.js"></script-->
+<script type="text/javascript">
+<!--
+var AScgiloc = 'http://www.imathas.com/imathas/filter/graph/svgimg.php';
+var AMTcgiloc = "/files/gif/";
+-->
+</script>
+
+
+<div class="text-center"><center>
+	
+	</center>
+</div>
+<br/>
+
+<h2 id="problem-name" class="text-center">ABCDEF - ABCDEF</h2>
+
+
+<div class="row">
+	<div id="problem-tags" class="col-lg-12 text-center">
+												
+					<a href="/problems/tag/binary-search"><span class=" tag-algorithm-datastructure- tag-link problem-tag" data-tagid="59">#binary-search<span class="fa fa-times manage-tag-ar" style="display: none"></span></span></a>
+						</div>
+</div>
+<br/>
+
+<div id="problem-body">
+	<p>You are given a set S of integers between -30000 and 30000 (inclusive).</p>
+<p>Find the total number of sextuples <img style="border: 0px initial initial;" src="../../../content/kalinov:abcdef1" alt="" width="255" height="20" />&nbsp;that satisfy:&nbsp;</p>
+<p style="text-align: center;"><img src="../../../content/kalinov:abcdef2" alt="" width="107" height="42" /></p>
+<p style="text-align: center;">&nbsp;</p>
+<h3 style="font-size: 1.17em;">Input</h3>
+<p>The first line contains integer N (1 &le; N &le; 100), the size of a set S.</p>
+<p>Elements of S are given in the next N lines, one integer per line. Given numbers will be distinct.</p>
+<h3>Output</h3>
+<p>Output the total number of plausible&nbsp;sextuples.</p>
+<h3>Examples</h3>
+<table style="width: 100%;" border="0" frame="void" align="center">
+<tbody>
+<tr>
+<td align="left" valign="top">
+<pre><strong>Input:</strong>
+1
+1
+
+<strong>Output:</strong>
+1</pre>
+</td>
+<td align="left" valign="top">
+<pre><strong>Input:</strong>
+2
+2
+3
+
+<strong>Output:</strong>
+4</pre>
+</td>
+<td align="left" valign="top">
+<pre><strong>Input:</strong>
+2
+-1
+1
+
+<strong>Output:</strong>
+24</pre>
+</td>
+<td align="left" valign="top">
+<pre><strong>Input:</strong>
+3
+5
+7
+10
+
+<strong>Output:</strong>
+10</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="white-space: pre;"><strong><br /></strong></span></p>
+</div>
+
+<div class="text-center">
+	<a href="/submit/ABCDEF/" class="btn btn-primary btn-lg"><i class="fa fa-send"></i> Submit solution!</a>
+</div>
+			<!-- google_ad_section_end -->
+			
+			<div id="ccontent">
+			<!-- google_ad_section_start -->
+			
+<hr style="clear:both;"/>
+<a href="#" onclick="toggleComments(); return false;"><span id="comments_sh">hide</span> comments</a><br/>
+
+<a id="comments"></a>
+<table id="comments_table" width="100%">
+		<tr>
+		<td colspan="2">
+		<ul class="pagination" style="">
+			<li class="disabled"><span>&lt;</span></li>
+		<li class="disabled"><span>Previous</span></li>
+						<li class="active"><span>1</span></li> 
+							<li><a href="/problems/ABCDEF/cstart=10" class="pager_link">2</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=20" class="pager_link">3</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=30" class="pager_link">4</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=40" class="pager_link">5</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=50" class="pager_link">6</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=60" class="pager_link">7</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=70" class="pager_link">8</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=80" class="pager_link">9</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=90" class="pager_link">10</a></li> 
+							<li><a href="/problems/ABCDEF/cstart=100" class="pager_link">11</a></li> 
+						<li><a href="/problems/ABCDEF/cstart=10" class="pager_link">Next</a></li>
+		<li><a href="/problems/ABCDEF/cstart=240" class="pager_link">&gt;</a></li>
+	</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+				</td>
+	</tr>
+	
+	<script language="JavaScript">
+	<!--
+	$(document).ready(function(){
+        $('.pager_link').bind('click', function(me){
+                var href=$(me.currentTarget).attr('href');
+		$('#ccontent').animate({opacity: 0.5},1);
+                $.ajax({
+                        type: "GET",
+                        url: href+",ajax=1",
+                        contentType: "application/x-www-form-urlencoded;charset=ISO-8859-2",
+                        success: function(data){
+                                $('#ccontent').html(data);
+				$('#ccontent').animate({opacity: 1.0},1);
+                        },
+                        error: function(err){
+                                alert('error');
+                        }
+                });
+                return false;
+        });
+	});
+	-->
+	</script>
+	
+
+
+
+			
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/4556f1d8e5df9bc2c0aec51076f5216e?s=40&20150116"/>
+		</td>
+		<td class="comm comm_odd">
+			<a href="/users/yasser1110">yasser1110</a>: 
+								<span style="font-size: 10px; color: #666;">2021-07-22 13:34:35</span>
+		<br/>
+				<p>Watch out for d != 0 condition. Gave me a WA in first attempt.</p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/18f52c227067f0f8998009e7efb6c9f9?s=40&20150116"/>
+		</td>
+		<td class="comm comm_even">
+			<a href="/users/thegreatpd">thegreatpd</a>: 
+								<span style="font-size: 10px; color: #666;">2021-07-06 14:10:30</span>
+		<br/>
+				<p>As,n=100,O(n^4) solution should pass. But I'm getting tle. Why?</p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/bfeffa963023c731d8ed428ed202c4a2?s=40&20150116"/>
+		</td>
+		<td class="comm comm_odd">
+			<a href="/users/jatin007">jatin007</a>: 
+								<span style="font-size: 10px; color: #666;">2021-05-24 08:19:33</span>
+		<br/>
+				<p>I've solved this problem for n^2 time complexity but its time limit should be increased for java. this problem is from 2009 so it might have same time limit for any language</p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/de075c1a64f1c00a7aece02c41bdb6b7?s=40&20150116"/>
+		</td>
+		<td class="comm comm_even">
+			<a href="/users/vasumath_1351">vasumath_1351</a>: 
+								<span style="font-size: 10px; color: #666;">2021-05-16 19:30:41</span>
+		<br/>
+				<p>Instead of Python submit the same code in PyPy 2.7 i got accepted ;)<br/></p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/78ae6ec817284649eb4cfa3591dde30b?s=40&20150116"/>
+		</td>
+		<td class="comm comm_odd">
+			<a href="/users/thelegend2710">thelegend2710</a>: 
+								<span style="font-size: 10px; color: #666;">2021-02-19 08:56:29</span>
+		<br/>
+				<p>How does this uses binary search?<br/></p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/7bbe4ca7596eaa76be3095d09d960fe4?s=40&20150116"/>
+		</td>
+		<td class="comm comm_even">
+			<a href="/users/kya_bantai">kya_bantai</a>: 
+								<span style="font-size: 10px; color: #666;">2020-12-03 16:16:38</span>
+		<br/>
+				<p>mappp</p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/07f1d274ee4187b23007b5869a852566?s=40&20150116"/>
+		</td>
+		<td class="comm comm_odd">
+			<a href="/users/kanishkverma_1">kanishkverma_1</a>: 
+								<span style="font-size: 10px; color: #666;">2020-11-28 11:09:08</span>
+		<br/>
+				<p>simple brute force with hashmap , handle the d == 0 case explicitly<br/></p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/90c6b261123c38c235152f50edf475f0?s=40&20150116"/>
+		</td>
+		<td class="comm comm_even">
+			<a href="/users/lamda_cdm_10">lamda_cdm_10</a>: 
+								<span style="font-size: 10px; color: #666;">2020-11-20 17:22:16</span>
+		<br/>
+				<p>AC in one go... A beautiful question, try solving the "4 SUM 0" problem first, and then try this one.</p>
+				<b>Last edit: 2020-11-20 17:23:21</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/faf674c1f3d8128893d690d86e7ae1e5?s=40&20150116"/>
+		</td>
+		<td class="comm comm_odd">
+			<a href="/users/legion0retr0">legion0retr0</a>: 
+								<span style="font-size: 10px; color: #666;">2020-08-16 15:54:22</span>
+		<br/>
+				<p>Probably hashmap should also be a added as a tag </p>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/443e242f425a5018f71d57e6803a7d7a?s=40&20150116"/>
+		</td>
+		<td class="comm comm_even">
+			<a href="/users/wille_25">wille_25</a>: 
+								<span style="font-size: 10px; color: #666;">2020-07-31 18:07:13</span>
+		<br/>
+				<p>solve SUMFOUR problem ..similar to this;</p>
+						</td>
+	</tr>
+			
+</table>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+        if (endstr == -1) { 
+                endstr = document.cookie.length; 
+        }
+        return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg) {
+      return getCookieVal (j);
+      }
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break; 
+    }
+  return null;
+}
+
+function toggleComments() {
+        var a = document.getElementById('comments_table');
+        var d = a.style.display;
+        if( d == "" || d == "block" ){
+                d = "none";
+                document.getElementById('comments_sh').innerHTML = 'show';
+        } else {
+                d = "block";
+                document.getElementById('comments_sh').innerHTML = 'hide';
+        }
+        a.style.display = d;
+        document.cookie="comments_table="+d+"; path=/;";
+}
+
+if( GetCookie('comments_table') == 'none' ){
+        document.getElementById('comments_sh').innerHTML = 'show';
+        document.getElementById('comments_table').style.display = 'hide';
+}
+
+-->
+</script>
+
+
+			<!-- google_ad_section_end -->
+			</div>
+			<table width="100%">
+                <tr>
+                <td colspan="2" height="20px"></td>
+        </tr>
+        <form method="post" action="/comment/ABCDEF/add/">
+        <tr> <td style="" colspan="2">Leave a Comment</td> </tr>
+        <tr>
+                <td valign="top"></td>
+                <td><textarea name="content" rows="3" class="form-control"></textarea></td>
+        </tr>
+        <tr>
+                <td colspan="2" style=""><br/>
+                        <input type="submit" value="Publish" class="btn btn-default"/>
+                        <input type="hidden" name="pcode" value="ABCDEF"/>
+                </td>
+        </tr>
+<tr>
+<td colspan="2" style="padding-left:5px; color: #999;">
+<br/>
+Notes:
+<br>1. Don't post any source code here.
+<br>2. Please be careful, leave short comments only. Don't spam here.
+<br>3. For more discussion (hints, ideas, solutions) please visit our <a href="/forum">forum</a>.
+<br>4. Authors of the problems are allowed to delete the post and use html code here (e.g. to provide some useful links).
+</td>
+</tr>
+        </form>
+        </table>
+<br/>
+		</div>
+	</div><!-- endof col-lg-8 col-md-8 -->
+	
+	<div class="col-lg-4 col-md-4">
+	
+				<div id="problem-btn-submit-box">
+			<a href="/submit/ABCDEF/" id="problem-btn-submit" class="btn btn-primary" style="width: 100%; margin-bottom: 20px;"><i class="fa fa-send"></i> Submit solution!</a>
+		</div>
+		
+		<div class="h"><!-- Spoj_S2S_Sidebar_ROS_Pos1 --><div id="bsa-zone_1621518317191-9_123456"></div></div>
+
+		
+		<table border=0 cellspacing=0 cellpadding=0 style="margin-bottom:10px" class="probleminfo" id="problem-meta">
+			<colgroup>
+				<col width="120"/>
+				<col/>
+			</colgroup>
+			<tbody>
+			<tr><td>Added by:</td><td><a href="/users/kalinov">Luka Kalinovcic</a></td></tr>
+			<tr><td>Date:</td><td>2009-07-13</td></tr>
+			<tr><td>Time limit:</td><td>1s
+			</td></tr>
+			<tr><td>Source limit:</td><td>50000B</td></tr>
+						<tr><td>Memory limit:</td><td>1536MB</td></tr>
+										<tr>
+					<td>Cluster:</td>
+					<td>
+													<a href="/clusters/" target="_blank">Cube (Intel G860)</a>
+								
+					</td>
+				</tr>
+						<tr><td>Languages:</td><td>All except: ERL JS-RHINO NODEJS PERL6 VB.NET </td></tr>
+			<tr><td>Resource:</td><td>own problem</td></tr>													</tbody>
+		</table>
+	
+		<!-- BEGIN: Voting for problem -->
+					 <!-- uzytkownik rozwiązał zadanie -->
+														<div class="panel panel-default" id="vote-requirement-message">
+					<div class="panel-heading">
+						<h4 class="panel-title">Vote requirements<span class="fa fa-exclamation-triangle pull-right grey"></span></h4>
+					</div>
+					<div class="panel-body">
+						<ul class="list-unstyled">
+							<li><span class="text-danger fa fa-times fa-fw"></span>&nbsp;&nbsp;user for 0 from 5 needed days							</li>
+							<li><span class="text-danger fa fa-times fa-fw"></span>&nbsp;&nbsp;solved 0 from 15 needed problems							</li>
+							<li><span class="text-success fa fa-check fa-fw"></span>&nbsp;&nbsp;solve this problem</li>
+						</ul>
+					</div>
+				</div><!-- end #vote-requirement-message -->
+					
+				
+		<!-- END: Voting the problem -->
+	
+				
+				<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Own tags</h4>
+				</div>
+				<div class="panel-body">
+			
+					<div id="problem-mytags">
+						<p>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
+	</p>					</div>
+					
+					<div class="input-group input-group-sm">
+				      <input type="text" class="form-control" placeholder="Tag name" id="problem-mytags-new">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button" id="problem-mytags-btn-add">Add</button>
+				      </span>
+				    </div><!-- /input-group -->
+				    
+				    
+				    <script type="text/javascript">
+				    $(document).ready(function(){
+				    	$(document).on('click', '#problem-mytags-btn-add', function(){
+				    		$.ajax({
+				    			url: '/?a=tags&act=cpriv',
+				    			method: 'post',
+				    			dataType: 'json',
+				    			data: {'name': $("#problem-mytags-new").val(), 'pid': '4580'},
+				    			success: function(data){
+				    				if(data['result'] == 'success'){
+				    					$('#problem-mytags').html(data['html']);
+				    				}
+				    				$("#problem-mytags-new").val('');
+				    				$("#problem-mytags-new").focus();
+				    			},
+				    			error: function(data){
+				    				//alert('error');
+				    			}
+				    		});
+				    	});
+				    	$(document).on('click', '.mytag', function(){
+				    		
+				    		var tid = $(this).attr('data-id');
+				    		var pid = '4580';
+				    		
+				    		$.ajax({
+				    			url: '/?a=tags&act=spriv',
+				    			method: 'post',
+				    			dataType: 'json',
+				    			data: {'pid': pid, 'tid': tid},
+				    			success: function(data){
+				    				if(data['result'] == 'success'){
+				    					$('#problem-mytags').html(data['html']);
+				    				}
+				    			},
+				    			error: function(data){
+				    				//alert('error');
+				    			}
+				    		});
+				    		
+				    		
+				    		return false;
+				    	});
+				    });
+				    </script>
+				    
+		
+				</div>
+		</div><!-- end .panel.panel-default -->
+				
+		
+		<script type="text/javascript">
+			function callback_after_vote(type, data)
+			{
+				var response = $.parseJSON(data);
+				manage_vote_interface(type);
+				//.html('<div class="vote-thank-you">Thank you!</div>');
+				
+
+				if (type == "problem" || type == "implementation") {
+					var progressBarValue = Math.round(2 + 98 * response.avg / 3);
+					var progressBarType;
+					if (progressBarValue < 25) progressBarType = "progress-bar-primary";
+					else if (progressBarValue < 50) progressBarType = "progress-bar-success";
+					else if (progressBarValue < 75) progressBarType = "progress-bar-warning";
+					else progressBarType = "progress-bar-danger";
+					
+					$("#rate-" + type + "-box .progress-bar").css("width", progressBarValue.toString() +"%");
+					$("#rate-" + type + "-box .progress-bar").attr("aria-valuenow", progressBarValue.toString());
+					$("#rate-" + type + "-box .progress-bar").attr("class", "progress-bar " + progressBarType);
+					$("#rate-" + type + "-box .progress-value").html(progressBarValue.toString() +"%");
+				}
+				else if (type == "quality") {
+					var quality_plus = response.sum_plus;
+					var quality_minus = response.sum_minus;
+
+					var box_content = '';
+
+					if (quality_plus > 0 || quality_minus > 0) {
+						if (quality_plus > 0) {
+							box_content += '<font size="+2"><span class="label label-success">' +
+								quality_plus.toString() + 
+								' <span class="fa fa-thumbs-o-up"></span></span></font>';
+						}
+						if (quality_minus > 0) {
+							box_content += '<font size="+2"><span class="label label-danger">' +
+								quality_minus.toString() + 
+								' <span class="fa fa-thumbs-o-down"></span></span></font>';
+						}
+					}
+
+					$( "#rate-" + type + "-box" ).empty().html(box_content);
+				}
+
+				// update count
+				if (response.update_count == 1) {
+					var count = parseInt($("#votes_count").html(), 10);
+					count++;
+					var votes_word = " vote";
+					if (count > 1) votes_word += "s";
+					$("#votes_count").empty().html(count.toString() + votes_word);
+				}
+			}
+			$( ".rate-btn" ).click(function() {
+				var rate_type = $(this).attr('data-rate-type').toString();
+				var rate_type_full = "";
+				var rate = $(this).attr('data-rate').toString();
+				if (rate_type == "p") rate_type_full = "problem";
+				else if (rate_type == "i") rate_type_full = "implementation";
+				else if (rate_type == "q") rate_type_full = "quality";
+				$.get( '/?a=vote&pid=4580&t=' + rate_type + '&r=' + rate, function( data ) {
+				  callback_after_vote(rate_type_full, data);
+				});
+			});
+			function manage_vote_interface(type) {
+				number_of_voteboxes--;
+				/*
+				if (number_of_voteboxes == 0) {
+					$( "#vote-box" ).fadeOut(1500, function() {
+						$(this).remove();
+					});
+				} else {
+					$( "#vote-" + type + "-box" ).fadeOut(1500, function() {
+						$(this).remove();
+					});
+				}
+				*/
+				var n = $('.vote-thank-you').length;
+				var offset = (n * 60).toString() + "px";
+				$(document.body).append(
+					'<div class="vote-thank-you" style="margin: 40%;">' +
+					'<div class="alert alert-success" style="position: fixed; top: '+offset+';">' +
+					'<strong>Thank you for voting!</strong>' +				
+					'</div></div>');
+				setTimeout(function(){$( ".vote-thank-you" ).fadeOut(1500, function() {
+					$(this).remove();
+				});},2000);
+			}
+		</script>
+		
+		
+	</div><!-- endof col-lg-4 col-md-4 -->
+</div>
+
+
+
+
+
+
+<style>
+ul.list-unstyled li{
+	margin-bottom: 5px;
+}
+ul.list-unstyled li a.btn{
+	width: 100%;
+}
+ul.ui-autocomplete{
+	z-index: 10000;
+	width: 200px !important;
+}
+</style>
+	<br/>
+</div>
+		
+		
+		<div class="container" id="footer">
+			<div class="row">
+				<div class="col-md-10">
+					<p><a href="/info">About</a> | <a href="/tutorials">Tutorial</a> | <a href="/tools">Tools</a> | <a href="/clusters">Clusters</a> | <a href="/credits">Credits</a> | <a href="/sphereengine">API</a> | <a href="/sphereengine-widget">Widgets</a></p>
+					<p>Legal: 
+					   <a href="/legal-tos/" target="_blank">Terms of Service</a> | <a href="/legal-pp/" target="_blank">Privacy Policy</a> | <a href="/legal-gdpr/" target="_blank">GDPR Info</a>
+					</p>
+				</div>
+				<div class="col-md-2 text-right">
+					<a href="/rss/" ><img src="//stx1.spoj.com/gfx/rss10x10.gif" border=0>&nbsp;RSS</a>&nbsp;
+				</div>
+			</div>
+		</div>
+		
+		<div class="text-center" id="footer-srl">
+			
+	&copy; Spoj.com. All Rights Reserved. Spoj uses <a href="http://sphere-engine.com?utm_campaign=permanent&amp;utm_medium=footer&amp;utm_source=spoj" style="color:black">Sphere Engine</a>&trade; &copy; by <a href="http://sphere-research.com?utm_campaign=permanent&amp;utm_medium=footer&amp;utm_source=spoj" style="color:black">Sphere Research Labs</a>.
+
+		</div> 
+	</div>
+
+	<!-- JavaScripts -->
+	
+		
+	
+	<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$('.no_a_info').css('visibility', 'visible');
+		}, 5000);
+		
+		if(!$('.aProblemTop').length && !$('.aProblemsTop').length && !$('.aSubmitTop').length && !$('.aStatusTop').length && !$('.aMainRight').length){
+			ga('send', 'event', 'ads', 'no-ads', 'main-contest');
+		}
+		if ($('.aProblemTop').height() == 0){
+			$('.aProblemTop').css({'border': '1px solid #ddd', 'background': '#f0f4e3', 'height': 90});
+			$('.aProblemTop').html($('<p class="text-center">using adblock?</p><h4 class="text-center">Online ads help us to maintain site.</h4><p class="text-center"><strong>please whitelist *.spoj.com</strong></p>'));
+			ga('send', 'event', 'ads', 'adblock2', 'aProblemTop');
+		}
+		if ($('.aProblemsTop').height() == 0){
+			ga('send', 'event', 'ads', 'adblock2', 'aProblemsTop');
+		}
+		if ($('.aSubmitTop').height() == 0){
+			ga('send', 'event', 'ads', 'adblock2', 'aSubmitTop');
+		}
+		if ($('.aStatusTop').height() == 0){
+			ga('send', 'event', 'ads', 'adblock2', 'aStatusTop');
+		}
+		if ($('.aMainRight').height() == 0){
+			ga('send', 'event', 'ads', 'adblock2', 'aMainRight');
+		}
+	});
+	</script>
+	
+	
+	<script type="text/javascript" src="//stx1.spoj.com/gfx/jquery.timers.js"></script>
+	<script type="text/javascript" src="//stx1.spoj.com/gfx/jquery.cookie.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script src="//stx1.spoj.com/gfx/md5.js"></script>
+	<script src="//stx1.spoj.com/gfx/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+	<script src="//stx1.spoj.com/gfx/scripts/tour.js"></script>
+	
+	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&appId=321676846207&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	
+	
+
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-10507872-1', 'auto');
+	  ga('require', 'linkid', 'linkid.js');
+	  ga('send', 'pageview');
+	</script>
+<!-- Hotjar Tracking Code for http://www.spoj.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:334656,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<script>
+(function(){
+  if(typeof _bsa !== 'undefined' && _bsa) {
+    // format, zoneKey, segment:value, options
+    _bsa.init('flexbar', 'CK7D4KJL', 'placement:demo');
+  }
+})();
+</script>
+<script type="text/javascript">
+	$(function(){
+		$(document).on('click', '.track', function(){
+			var event = $(this).attr('data-event');
+			var action = $(this).attr('data-action');
+			var value = $(this).attr('data-value');
+			ga('send', 'event', event, action, value);
+		});
+	});
+	//window.open('http://incoming.hotjar.com/s/7366', '_blank');
+	</script>
+
+
+</body>
+</html>
