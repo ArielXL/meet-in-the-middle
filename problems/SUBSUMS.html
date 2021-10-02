@@ -109,7 +109,19 @@
 		<div class="container" id="header">
 			<div class="row">
 				<div class="col-md-12 text-right">
-					
+										<form method="post" style="display: none;" action="/login/" id="login-form">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-2">
+								<input type="hidden" name="next_raw" value="/"/>
+								<input type="hidden" name="autologin" value="1"/>
+								<input type="text" name="login_user" placeholder="Username" class="form-control input-sm" style="display: inline-block; width: 25%;"/>
+								<input type="password" name="password" placeholder="Password" class="form-control input-sm" style="display: inline-block; width: 25%;"/>
+																<button type="submit" class="btn btn-default btn-sm" style="display: inline-block; margin-right: 10px;"><span class="fa fa-sign-in fa-lg"></span> <strong>sign in</strong></button>
+																<a href="/register"><i class="fa fa-user-plus"></i> sign up</a> 
+								<a href="/forgot"><i class="fa fa-question-circle"></i> forgot</a>
+				        									</div>
+						</div>
+					</form>
 										
 					
 				</div>
@@ -148,30 +160,9 @@
 					        <li >
 					          <a href="/contests">CONTESTS</a>
 					        </li>
-											        					        
-						        						      	
-						      							      	<li style="margin-right: 0px;">
-						      		<a href="/manageaccount/">
-						      			<span tabindex="0" id="profile-menu" data-trigger="hover" data-container="body" data-toggle="popover" data-html="true" data-placement="left" data-content="You filled 38% of your profile, maybe you want to add some more?"><i class="fa fa-exclamation-triangle text-danger"></i></span>
-						      		</a>
-						      	</li>
-						      						        
-					        <li class="dropdown profile">
-					        	<a href="#" class="username_dropdown dropdown-toggle" data-toggle="dropdown">
-					        		<img width="20" height="20" src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e&s=20?20210810" class="avatar small-left-margin"/>
-					        		<!-- ariel_pd -->PROFILE&nbsp;<span class="caret"></span>
-					        	</a>	
-			
-									<ul class="dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownUser">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="/myaccount"><span class="fa fa-user fa-fw"></span>&nbsp; My profile</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="/manageaccount"><span class="fa fa-cogs fa-fw"></span>&nbsp; Manage profile</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="/status/ariel_pd"><span class="fa fa-history fa-fw"></span>&nbsp; Submissions history</a></li>
-										<li class="divider"></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="/logout"><span class="fa fa-sign-out fa-fw"></span>&nbsp; Sign out</a></li>
-									</ul>
-								
+											        					        <li >
+					        	<a href="/login" class="text-success" onclick="$('#login-form').show(); $('input[name=login_user]').focus(); return false;"><i class="fa fa-sign-in"></i> sign in</a>
 					        </li>
-					        
 					        						
 				        
 				      </ul>
@@ -205,14 +196,14 @@
 		
 	<ol class="navbar-right">
 						
-		<li><a href="/status/SUBSUMS,ariel_pd/" class="">My status</a></li>		<li><a href="/status/SUBSUMS/" class="">Status</li></a>
+				<li><a href="/status/SUBSUMS/" class="">Status</li></a>
 		<li><a href="/ranks/SUBSUMS/" class="">Ranking</li></a>
 	</ol>
 </div>
 
 
 	<script type="text/javascript">
-		var number_of_voteboxes = "3";
+		var number_of_voteboxes = "";
 	</script>
 
 
@@ -352,9 +343,22 @@ var AMTcgiloc = "/files/gif/";
 			
 	<tr>
 		<td width="50" style="vertical-align:top;">
-			<img src="https://www.gravatar.com/avatar/e3b4733a4fe445deee62494376786c62?s=40&20150116"/>
+			<img src="https://www.gravatar.com/avatar/7c657935b85ad134c6bdb9740f52cb5f?s=40&20150116"/>
 		</td>
 		<td class="comm comm_odd">
+			<a href="/users/devil_nero">devil_nero</a>: 
+								<span style="font-size: 10px; color: #666;">2021-09-02 10:54:16</span>
+		<br/>
+				<p>Prerequisites: Meet in the meet algo. Don't waste much time come back after learning the aforementioned algo.</p>
+				<b>Last edit: 2021-09-03 09:03:47</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td width="50" style="vertical-align:top;">
+			<img src="https://www.gravatar.com/avatar/e3b4733a4fe445deee62494376786c62?s=40&20150116"/>
+		</td>
+		<td class="comm comm_even">
 			<a href="/users/iq69">iq69</a>: 
 								<span style="font-size: 10px; color: #666;">2021-08-10 21:12:00</span>
 		<br/>
@@ -366,7 +370,7 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/d5c9ecbde2c1aa94cea97cc41dc0029a?s=40&20150116"/>
 		</td>
-		<td class="comm comm_even">
+		<td class="comm comm_odd">
 			<a href="/users/shad_152">shad_152</a>: 
 								<span style="font-size: 10px; color: #666;">2021-06-23 14:17:54</span>
 		<br/>
@@ -378,7 +382,7 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/063dce8f8145ee2916d3ca72cb0bf34f?s=40&20150116"/>
 		</td>
-		<td class="comm comm_odd">
+		<td class="comm comm_even">
 			<a href="/users/dazzler18">dazzler18</a>: 
 								<span style="font-size: 10px; color: #666;">2021-06-02 10:53:13</span>
 		<br/>
@@ -390,7 +394,7 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/41684882a01a46726b77e2f74b0904eb?s=40&20150116"/>
 		</td>
-		<td class="comm comm_even">
+		<td class="comm comm_odd">
 			<a href="/users/f_alam2000">f_alam2000</a>: 
 								<span style="font-size: 10px; color: #666;">2021-05-20 13:26:00</span>
 		<br/>
@@ -402,7 +406,7 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/9fbb19434098268d351f336c7cbf72a6?s=40&20150116"/>
 		</td>
-		<td class="comm comm_odd">
+		<td class="comm comm_even">
 			<a href="/users/prabhav401">prabhav401</a>: 
 								<span style="font-size: 10px; color: #666;">2021-05-04 12:34:13</span>
 		<br/>
@@ -414,7 +418,7 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/a19de50f88014a51860b9dc396642e34?s=40&20150116"/>
 		</td>
-		<td class="comm comm_even">
+		<td class="comm comm_odd">
 			<a href="/users/mahak_rawat">mahak_rawat</a>: 
 								<span style="font-size: 10px; color: #666;">2021-04-05 17:33:21</span>
 		<br/>
@@ -426,7 +430,7 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/1a5ad8c0c3de60d962229f23276865da?s=40&20150116"/>
 		</td>
-		<td class="comm comm_odd">
+		<td class="comm comm_even">
 			<a href="/users/aviral_tiwari">aviral_tiwari</a>: 
 								<span style="font-size: 10px; color: #666;">2021-02-18 12:05:10</span>
 		<br/>
@@ -438,7 +442,7 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/a30e7872a0d0d67599281c79372b6c76?s=40&20150116"/>
 		</td>
-		<td class="comm comm_even">
+		<td class="comm comm_odd">
 			<a href="/users/reaped_juggler">reaped_juggler</a>: 
 								<span style="font-size: 10px; color: #666;">2021-02-14 09:48:53</span>
 		<br/>
@@ -450,23 +454,11 @@ var AMTcgiloc = "/files/gif/";
 		<td width="50" style="vertical-align:top;">
 			<img src="https://www.gravatar.com/avatar/3ef67d9265d50d6b71f68d90122543c9?s=40&20150116"/>
 		</td>
-		<td class="comm comm_odd">
+		<td class="comm comm_even">
 			<a href="/users/nil_s">nil_s</a>: 
 								<span style="font-size: 10px; color: #666;">2021-02-13 13:57:39</span>
 		<br/>
 				<p>Getting WA on 14th testcase . Anybody can help??</p>
-						</td>
-	</tr>
-				
-	<tr>
-		<td width="50" style="vertical-align:top;">
-			<img src="https://www.gravatar.com/avatar/43068ae08868764679933aaf7d17c97b?s=40&20150116"/>
-		</td>
-		<td class="comm comm_even">
-			<a href="/users/hackerbhaiya">hackerbhaiya</a>: 
-								<span style="font-size: 10px; color: #666;">2021-01-02 16:07:01</span>
-		<br/>
-				<p>starter of meet in the middle algorithm :)</p>
 						</td>
 	</tr>
 			
@@ -525,32 +517,6 @@ if( GetCookie('comments_table') == 'none' ){
 			<!-- google_ad_section_end -->
 			</div>
 			<table width="100%">
-                <tr>
-                <td colspan="2" height="20px"></td>
-        </tr>
-        <form method="post" action="/comment/SUBSUMS/add/">
-        <tr> <td style="" colspan="2">Leave a Comment</td> </tr>
-        <tr>
-                <td valign="top"></td>
-                <td><textarea name="content" rows="3" class="form-control"></textarea></td>
-        </tr>
-        <tr>
-                <td colspan="2" style=""><br/>
-                        <input type="submit" value="Publish" class="btn btn-default"/>
-                        <input type="hidden" name="pcode" value="SUBSUMS"/>
-                </td>
-        </tr>
-<tr>
-<td colspan="2" style="padding-left:5px; color: #999;">
-<br/>
-Notes:
-<br>1. Don't post any source code here.
-<br>2. Please be careful, leave short comments only. Don't spam here.
-<br>3. For more discussion (hints, ideas, solutions) please visit our <a href="/forum">forum</a>.
-<br>4. Authors of the problems are allowed to delete the post and use html code here (e.g. to provide some useful links).
-</td>
-</tr>
-        </form>
         </table>
 <br/>
 		</div>
@@ -589,121 +555,11 @@ Notes:
 		</table>
 	
 		<!-- BEGIN: Voting for problem -->
-					 <!-- uzytkownik rozwiązał zadanie -->
-														<div class="panel panel-default" id="vote-requirement-message">
-					<div class="panel-heading">
-						<h4 class="panel-title">Vote requirements<span class="fa fa-exclamation-triangle pull-right grey"></span></h4>
-					</div>
-					<div class="panel-body">
-						<ul class="list-unstyled">
-							<li><span class="text-danger fa fa-times fa-fw"></span>&nbsp;&nbsp;user for 0 from 5 needed days							</li>
-							<li><span class="text-danger fa fa-times fa-fw"></span>&nbsp;&nbsp;solved 0 from 15 needed problems							</li>
-							<li><span class="text-success fa fa-check fa-fw"></span>&nbsp;&nbsp;solve this problem</li>
-						</ul>
-					</div>
-				</div><!-- end #vote-requirement-message -->
-					
+		
 				
 		<!-- END: Voting the problem -->
 	
 				
-				<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">Own tags</h4>
-				</div>
-				<div class="panel-body">
-			
-					<div id="problem-mytags">
-						<p>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-			<a href="#" class="mytag" data-id=""><span class="label label-default">#</span></a>
-	</p>					</div>
-					
-					<div class="input-group input-group-sm">
-				      <input type="text" class="form-control" placeholder="Tag name" id="problem-mytags-new">
-				      <span class="input-group-btn">
-				        <button class="btn btn-default" type="button" id="problem-mytags-btn-add">Add</button>
-				      </span>
-				    </div><!-- /input-group -->
-				    
-				    
-				    <script type="text/javascript">
-				    $(document).ready(function(){
-				    	$(document).on('click', '#problem-mytags-btn-add', function(){
-				    		$.ajax({
-				    			url: '/?a=tags&act=cpriv',
-				    			method: 'post',
-				    			dataType: 'json',
-				    			data: {'name': $("#problem-mytags-new").val(), 'pid': '3749'},
-				    			success: function(data){
-				    				if(data['result'] == 'success'){
-				    					$('#problem-mytags').html(data['html']);
-				    				}
-				    				$("#problem-mytags-new").val('');
-				    				$("#problem-mytags-new").focus();
-				    			},
-				    			error: function(data){
-				    				//alert('error');
-				    			}
-				    		});
-				    	});
-				    	$(document).on('click', '.mytag', function(){
-				    		
-				    		var tid = $(this).attr('data-id');
-				    		var pid = '3749';
-				    		
-				    		$.ajax({
-				    			url: '/?a=tags&act=spriv',
-				    			method: 'post',
-				    			dataType: 'json',
-				    			data: {'pid': pid, 'tid': tid},
-				    			success: function(data){
-				    				if(data['result'] == 'success'){
-				    					$('#problem-mytags').html(data['html']);
-				    				}
-				    			},
-				    			error: function(data){
-				    				//alert('error');
-				    			}
-				    		});
-				    		
-				    		
-				    		return false;
-				    	});
-				    });
-				    </script>
-				    
-		
-				</div>
-		</div><!-- end .panel.panel-default -->
 				
 		
 		<script type="text/javascript">
