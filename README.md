@@ -20,6 +20,17 @@ En la carpeta [problems](./problems) proponemos varios problemas a resolver con 
 
 Los códigos propuestos para los problemas anteriormente mencionados podemos encontrarlos [aquí](./codes) y fueron implementados en [c++](https://es.wikipedia.org/wiki/C%2B%2B) como lenguaje de programación. Dicho lenguaje de programación es reconocido mundialmente en las competencias de programación competitiva ACM-ICPC por su gran eficiencia en tiempo de ejecución.
 
+## Resumen
+
+|                          Problemas                           |   Sitio de Programación    |                         Código                         |     Resultado      |
+| :----------------------------------------------------------: | :------------------------: | :----------------------------------------------------: | :----------------: |
+| [SUBSUMS - Subset Sums](https://www.spoj.com/problems/SUBSUMS/) | Sphere Online Judge (SPOJ) |           [subsums](./codes/Subset sums.cpp)           | :heavy_check_mark: |
+| [Maximum Subsequence](https://codeforces.com/problemset/problem/888/E) |         CodeForces         | [maximum_subsequence](./codes/Maximum subsequence.cpp) | :heavy_check_mark: |
+|        [Shortest Path](./problems/Shortest Path.png)         |       GeeksforGeeks        |       [shortest_path](./codes/Shortest path.cpp)       | :heavy_check_mark: |
+|   [Discrete Logarithm](./problems/Discrete logarithm.png)    |       GeeksforGeeks        |  [discrete_logarithm](./codes/Discrete logarithm.cpp)  | :heavy_check_mark: |
+|       [ABCDEF](https://www.spoj.com/problems/ABCDEF/)        | Sphere Online Judge (SPOJ) |              [abcdef](./codes/ABCDEF.cpp)              | :heavy_check_mark: |
+|      [SUMFOUR](https://www.spoj.com/problems/SUMFOUR/)       | Sphere Online Judge (SPOJ) |     [sumfour](./codes/4 values whose sum is 0.cpp)     | :heavy_check_mark: |
+
 ## Sobre la License
 
 Este trabajo se encuentra bajo los requerimientos de la licencia [LICENSE](LICENSE), la cual puede consultar para más información y detalles.
