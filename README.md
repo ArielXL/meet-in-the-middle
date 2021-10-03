@@ -26,8 +26,8 @@ Los códigos propuestos para los problemas anteriormente mencionados podemos enc
 | :----------------------------------------------------------: | :------------------------: | :----------------------------------------------------: | :----------------: |
 |    [Subset Sums](https://www.spoj.com/problems/SUBSUMS/)     | Sphere Online Judge (SPOJ) |           [subsums](./codes/subset_sums.cpp)           | :heavy_check_mark: |
 | [Maximum Subsequence](https://codeforces.com/problemset/problem/888/E) |         CodeForces         | [maximum subsequence](./codes/maximum_subsequence.cpp) | :heavy_check_mark: |
-|        [Shortest Path](./problems/Shortest Path.png)         |       GeeksforGeeks        |       [shortest path](./codes/shortest_path.cpp)       | :heavy_check_mark: |
-|   [Discrete Logarithm](./problems/Discrete logarithm.png)    |       GeeksforGeeks        |  [discrete logarithm](./codes/discrete_logarithm.cpp)  | :heavy_check_mark: |
+|         [Shortest Path](./problems/ShortestPath.png)         |       GeeksforGeeks        |       [shortest path](./codes/shortest_path.cpp)       | :heavy_check_mark: |
+|    [Discrete Logarithm](./problems/DiscreteLogarithm.png)    |       GeeksforGeeks        |  [discrete logarithm](./codes/discrete_logarithm.cpp)  | :heavy_check_mark: |
 |       [ABCDEF](https://www.spoj.com/problems/ABCDEF/)        | Sphere Online Judge (SPOJ) |              [abcdef](./codes/ABCDEF.cpp)              | :heavy_check_mark: |
 |      [SUMFOUR](https://www.spoj.com/problems/SUMFOUR/)       | Sphere Online Judge (SPOJ) |             [sumfour](./codes/sumfour.cpp)             | :heavy_check_mark: |
 
